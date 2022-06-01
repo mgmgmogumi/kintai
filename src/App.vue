@@ -15,6 +15,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+html {
+  background-image: url("../public/background.png");
+  background-repeat: repeat;
+  background-color: rgba(222,222,222,0.8);
+  background-blend-mode: lighten;
 }
 </style>

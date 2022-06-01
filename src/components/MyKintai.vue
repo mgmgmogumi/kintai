@@ -1,16 +1,20 @@
 <template>
   <div>
-    <h1>ようこそ勤怠管理へ！！！</h1>
+    <h1 class="title">ようこそ勤怠管理へ！！！</h1>
 
-    <p>
-      <router-link to="/">出社</router-link>
-    </p>
     <div class="container">
-        <div :class="index===1 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="button">退社</div>
-        <div :class="index===2 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="button">退社</div>
-        <div :class="index===3 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="button">退社</div>
+      <router-link to="/" class="in_button">出社</router-link>
+    </div>
+    <div class="container">
+        <router-link to="/"  :class="index===1 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
+        <router-link to="/"  :class="index===2 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
+        <router-link to="/"  :class="index===3 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
     </div>
 
+    <hr>
+    <a href="https://twitter.com/mgmgmogumii" target="_blank" rel="noopener">@mgmgmogumi</a><br>
+    <a href="https://github.com/mgmgmogumi/kintai" target="_blank" rel="noopener">GitHub</a><br>
+    
   </div>
 </template>
 
@@ -46,18 +50,45 @@ export default {
 </script>
 
 <style scoped>
+
+.title {
+  font-size: 32px;
+  color: red;
+  /* font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif; */
+  font-family: "HGS創英角ｺﾞｼｯｸUB", "HGS創英ﾌﾟﾚｾﾞﾝｽEB", "HGS創英角ﾎﾟｯﾌﾟ体", "游ゴシック", "メイリオ", "ＭＳ ゴシック", "ＭＳ Ｐゴシック", "Hiragino Maru Gothic Pro W4", "Hiragino Maru Gothic ProN W4";
+  font-style: italic;
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+  padding: 50px;
+}
 .container {
   display: flex;
-  margin: 1em;
   justify-content: space-around;
 }
 
-.button {
-  padding: 1em;
-  width: 110px;
-  background-color: #39464e;
-  color: white;
-  text-align: center;
+.in_button {
+  padding: 5px 0px;
+  flex-basis: 90px;
+  background-color: #bda28d;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 5px;
+  border: 1px solid;
+  text-align: right;
+  margin: 50px;
+}
+
+.out_button {
+  padding: 5px 10px;
+  flex-basis: 80px;
+  background-color: #967661;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 50px;
 }
 
 .v_visible {
