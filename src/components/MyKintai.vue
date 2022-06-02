@@ -6,9 +6,9 @@
       <router-link to="/" class="in_button">出社</router-link>
     </div>
     <div class="container">
-        <router-link to="/"  :class="index===1 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
-        <router-link to="/"  :class="index===2 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
-        <router-link to="/"  :class="index===3 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
+        <router-link to="/kintai"  :class="index===1 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
+        <router-link to="/kintai"  :class="index===2 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
+        <router-link to="/kintai"  :class="index===3 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
     </div>
 
     <hr>
@@ -55,7 +55,7 @@ export default {
   font-size: 32px;
   color: red;
   /* font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif; */
-  font-family: "HGS創英角ｺﾞｼｯｸUB", "HGS創英ﾌﾟﾚｾﾞﾝｽEB", "HGS創英角ﾎﾟｯﾌﾟ体", "游ゴシック", "メイリオ", "ＭＳ ゴシック", "ＭＳ Ｐゴシック", "Hiragino Maru Gothic Pro W4", "Hiragino Maru Gothic ProN W4";
+  font-family: "HGS創英角ﾎﾟｯﾌﾟ体", "HGS創英角ｺﾞｼｯｸUB", "HGS創英ﾌﾟﾚｾﾞﾝｽEB","游ゴシック", "メイリオ", "ＭＳ ゴシック", "ＭＳ Ｐゴシック", "Hiragino Maru Gothic Pro W4", "Hiragino Maru Gothic ProN W4";
   font-style: italic;
   text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
               -1px 1px 0 #FFF, 1px -1px 0 #FFF,

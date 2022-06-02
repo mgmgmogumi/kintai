@@ -3,7 +3,7 @@
     <h1 class="title">勤怠管理</h1>
     
     <p>
-      <router-link to="/kintai" class="button">入口</router-link>
+      <router-link to="/attendance" class="button">入口</router-link>
     </p>
   </div>
 </template>

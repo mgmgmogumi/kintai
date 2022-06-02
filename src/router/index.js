@@ -9,8 +9,8 @@ const routes = [
     component: MyHome
   },
   {
-    path: '/kintai',
-    name: 'kintai',
+    path: '/attendance',
+    name: 'attendance',
     component: MyKintai
   }
 ]
