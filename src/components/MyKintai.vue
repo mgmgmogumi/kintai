@@ -6,9 +6,9 @@
       <router-link to="/" class="in_button">出社</router-link>
     </div>
     <div class="container">
-        <router-link to="/kintai"  :class="index===1 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
-        <router-link to="/kintai"  :class="index===2 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
-        <router-link to="/kintai"  :class="index===3 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
+        <router-link to="/"  :class="index===1 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
+        <router-link to="/"  :class="index===2 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
+        <router-link to="/"  :class="index===3 ? visibleClass : hiddenClass" @mouseover="indexAction(index)" class="out_button">退社</router-link>
     </div>
 
     <hr>
@@ -77,7 +77,7 @@ export default {
   border-radius: 5px;
   border: 1px solid;
   text-align: right;
-  margin: 50px;
+  margin: 50px 0;
 }
 
 .out_button {
@@ -88,7 +88,7 @@ export default {
   font-weight: 900;
   border-radius: 5px;
   border: 1px solid;
-  margin: 50px;
+  margin: 50px 0;
 }
 
 .v_visible {

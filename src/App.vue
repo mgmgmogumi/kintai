@@ -19,8 +19,8 @@ export default {
 
 html {
   background-image: url("../public/background.png");
-  background-repeat: repeat;
-  background-color: rgba(222,222,222,0.8);
+  background-size: 15%;
+  background-color: rgba(200,235,255,0.8);
   background-blend-mode: lighten;
 }
 </style>
